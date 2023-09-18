@@ -18,6 +18,8 @@ metadata:
     app: mongo-express
 spec:
   replicas: 1
+  strategy:
+    type: RollingUpdate
   selector:
     matchLabels:
       app: mongo-express
